@@ -1,0 +1,30 @@
+.box {
+  padding: 80px;
+  padding-top: 20px;
+  text-align: center;
+  background: rgba(31, 31, 34, 0.918);
+  max-height: 80px;
+  /* color: white; */
+  /* font-size: 60px;
+  font-family: "Langar", cursive; */
+}
+
+#title {
+  font-size: 80px;
+  font-family: "Langar", cursive;
+  color: gold;
+  letter-spacing: 20px;
+}
+
+#subtitles {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+#subtitle {
+  padding-top: 5px;
+  color: goldenrod;
+  font-size: 25px;
+}

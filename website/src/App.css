@@ -13,6 +13,13 @@
   }
 }
 
+.background {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: grey;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
