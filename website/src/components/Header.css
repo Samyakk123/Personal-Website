@@ -2,8 +2,11 @@
   padding: 80px;
   padding-top: 20px;
   text-align: center;
-  background: rgba(31, 31, 34, 0.918);
-  max-height: 80px;
+  /* background: rgba(31, 31, 34, 0.918); */
+  background-image: url("../images/do-alpha.png");
+  background-position-y: -15rem;
+  background-position-x: 4rem;
+  max-height: 140px;
   /* color: white; */
   /* font-size: 60px;
   font-family: "Langar", cursive; */
@@ -14,6 +17,7 @@
   font-family: "Langar", cursive;
   color: gold;
   letter-spacing: 20px;
+  border-color: black;
 }
 
 #subtitles {
@@ -24,7 +28,10 @@
 }
 
 #subtitle {
-  padding-top: 5px;
-  color: goldenrod;
+  /* padding-top: 5px; */
+  color: rgb(255, 183, 0);
   font-size: 25px;
+  background-color: rgb(77, 78, 4);
+  border-style: solid;
+  border-color: rgb(88, 65, 5);
 }
