@@ -1,10 +1,10 @@
 .centrePiece {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   /* padding-right: 500px; */
-  height: 40rem;
+  height: 120rem;
   /* background-color: gold; */
 }
 
@@ -14,7 +14,18 @@
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  background-color: rgba(7, 6, 66, 0.747);
+  /* height: 100vh; */
+}
+
+.projects {
+  display: flex;
+  width: 90%;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(7, 6, 66, 0.747);
 }
 
 .normalText {
@@ -24,6 +35,14 @@
 
 .text {
   color: bisque;
+}
+
+.text2 {
+  color: rgb(179, 130, 67);
+}
+
+.text3 {
+  color: rgba(230, 14, 14, 0.897);
 }
 
 .firstLetter {
@@ -47,6 +66,80 @@
 } */
 
 #sub {
-  font-size: 3rem;
+  font-size: 5rem;
   color: bisque;
+}
+
+.title {
+  background-color: rgba(7, 6, 66, 0.747);
+}
+
+.miniSections {
+  display: flex;
+  background-color: rgb(19, 17, 48);
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+  height: auto;
+  margin: 30px;
+}
+
+#miniTitle {
+  font-size: 2rem;
+}
+
+#heading {
+  margin: 1px;
+}
+
+.projectPicCombo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 5px; */
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.textProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* margin: 1px;
+  margin-top: 15px; */
+  margin: 1px;
+  /* margin-left: 40px; */
+}
+
+.skillSet {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  background-color: rgba(94, 105, 105, 0.267);
+}
+
+.descriptionAndSkills {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.skillBox {
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  background: rgb(56, 9, 9);
+  padding: 0.75rem;
+  border-radius: 1rem;
+  margin: 0.2rem;
+  width: max-content;
+  color: rgb(110, 120, 180);
+}
+
+.skillHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
 }

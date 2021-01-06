@@ -34,4 +34,7 @@
   background-color: rgb(77, 78, 4);
   border-style: solid;
   border-color: rgb(88, 65, 5);
+
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
