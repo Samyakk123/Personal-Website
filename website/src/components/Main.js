@@ -3,6 +3,9 @@ import "./Main.css";
 import Header from "./Header";
 import UofTlogo from "../images/Utoronto_coa.svg.png";
 import connect4 from "../images/GamePage.png";
+import gitIcon from "../images/gitIcon.svg";
+import exeFile from "../images/exe.svg";
+import websiteLink from "../images/globe-grid.svg";
 
 class Main extends Component {
   render() {
@@ -27,13 +30,7 @@ class Main extends Component {
                   in Statistics!
                 </para>
               </para>
-              <img
-                className="image"
-                src={UofTlogo}
-                width="250px"
-                height="225px"
-                alt="UofTlogo"
-              />
+              <img src={UofTlogo} width="250px" height="225px" alt="UofTlogo" />
             </div>
           </div>
 
@@ -77,14 +74,29 @@ class Main extends Component {
                     <div className="skillBox">Component events</div>
                   </div>
                 </div>
+
+                <div className="imagesHolder">
+                  <img
+                    src={gitIcon}
+                    width="100px"
+                    height="100px"
+                    alt="gitIcon"
+                  />
+                  <img
+                    src={websiteLink}
+                    width="90px"
+                    height="90px"
+                    alt="exeFile"
+                  />
+                </div>
               </div>
             </div>
 
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
-                <h5 className="text2" id="heading">
-                  Mock Linux Shell
-                </h5>
+                <h3 className="text2" id="heading">
+                  Connect 4
+                </h3>
                 <img
                   src={connect4}
                   width="200px"
@@ -117,15 +129,23 @@ class Main extends Component {
                   </div>
                 </div>
 
-                <div>More text here!</div>
+                <div className="imagesHolder">
+                  <img
+                    src={gitIcon}
+                    width="100px"
+                    height="100px"
+                    alt="gitIcon"
+                  />
+                  <img src={exeFile} width="90px" height="90px" alt="exeFile" />
+                </div>
               </div>
             </div>
 
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
-                <h3 className="text2" id="heading">
-                  Connect 4
-                </h3>
+                <h5 className="text2" id="heading">
+                  Mock Linux Shell
+                </h5>
                 <img
                   src={connect4}
                   width="200px"
