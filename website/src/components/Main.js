@@ -6,6 +6,10 @@ import connect4 from "../images/GamePage.png";
 import gitIcon from "../images/gitIcon.svg";
 import exeFile from "../images/exe.svg";
 import websiteLink from "../images/globe-grid.svg";
+import uImpactify from "../images/UImpactify.PNG";
+import spotify from "../images/spotify.svg";
+
+import { FaGithub, FaTerminal } from "react-icons/fa";
 
 class Main extends Component {
   render() {
@@ -40,26 +44,29 @@ class Main extends Component {
             </div>
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
-                <h3 className="text2" id="heading">
+                <h3 className="header" id="heading">
                   U-Impactify
                 </h3>
                 <img
-                  src={connect4}
+                  src={uImpactify}
                   width="200px"
-                  height="150px"
-                  alt="UofTlogo"
+                  height="175px"
+                  alt="UImpactify"
                 />
               </div>
               <div className="descriptionAndSkills">
                 <ul className="textProject text2">
-                  <li>Player vs player and player vs AI compatibility</li>
                   <li>
-                    Uses minimax algorithm with alpha beta pruning to determine
-                    ideal moves
+                    Worked in a group of 7 to develop an online elearning
+                    platform
                   </li>
                   <li>
-                    Various difficulties to accomodate for all different types
-                    of players
+                    Used version control with daily scrum meetings and the agile
+                    development process alongside tools like Jira and Git
+                  </li>
+                  <li>
+                    Supports the creation and deletion of courses, assessments,
+                    uploading files, searching for employment, etc.
                   </li>
                 </ul>
 
@@ -68,30 +75,39 @@ class Main extends Component {
                     skills
                   </h3>
                   <div className="skillHolder">
-                    <div className="skillBox">Java Swing</div>
-                    <div className="skillBox">WindowBuilder</div>
-                    <div className="skillBox">GUI</div>
-                    <div className="skillBox">Component events</div>
+                    <div className="skillBox">Angular</div>
+                    <div className="skillBox">MongoDb</div>
+                    <div className="skillBox">Socket.io</div>
+                    <div className="skillBox">Node</div>
+                    <div className="skillBox">Agile</div>
+                    <div className="skillBox">Chart.js</div>
+                    <div className="skillBox">GridFS</div>
+                    <div className="skillBox">Clarity</div>
+                    <div className="skillBox">Figma</div>
+                    <div className="skillBox">Jira</div>
+                    <div className="skillBox">ngx-file-drop</div>
                   </div>
                 </div>
 
                 <div className="imagesHolder">
-                  <img
-                    src={gitIcon}
-                    width="100px"
-                    height="100px"
-                    alt="gitIcon"
-                  />
-                  <img
-                    src={websiteLink}
-                    width="90px"
-                    height="90px"
-                    alt="exeFile"
-                  />
+                  <a
+                    href="https://github.com/Samyakk123/U-Impactify"
+                    target="_blank"
+                  >
+                    <FaGithub size="100px" color="#892711" alt="gitIcon" />
+                  </a>
+                  <a href="https://uimpactify.herokuapp.com/" target="_blank">
+                    <img
+                      src={websiteLink}
+                      width="90px"
+                      height="90px"
+                      alt="exeFile"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
-
+            {/* 
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
                 <h3 className="text2" id="heading">
@@ -100,7 +116,7 @@ class Main extends Component {
                 <img
                   src={connect4}
                   width="200px"
-                  height="150px"
+                  height="175px"
                   alt="UofTlogo"
                 />
               </div>
@@ -130,12 +146,7 @@ class Main extends Component {
                 </div>
 
                 <div className="imagesHolder">
-                  <img
-                    src={gitIcon}
-                    width="100px"
-                    height="100px"
-                    alt="gitIcon"
-                  />
+                  <FaGithub size="100px" color="#892711" alt="gitIcon" />
                   <img src={exeFile} width="90px" height="90px" alt="exeFile" />
                 </div>
               </div>
@@ -143,14 +154,51 @@ class Main extends Component {
 
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
-                <h5 className="text2" id="heading">
-                  Mock Linux Shell
-                </h5>
+                <h4 className="text2" id="heading">
+                  Spotify API clone
+                </h4>
+                <img src={spotify} width="200px" height="150px" alt="spotify" />
+              </div>
+              <div className="descriptionAndSkills">
+                <ul className="textProject text2">
+                  <li>Player vs player and player vs AI compatibility</li>
+                  <li>
+                    Uses minimax algorithm with alpha beta pruning to determine
+                    ideal moves
+                  </li>
+                  <li>
+                    Various difficulties to accomodate for all different types
+                    of players
+                  </li>
+                </ul>
+
+                <div className="skillSet">
+                  <h3 className="text3" id="heading">
+                    skills
+                  </h3>
+                  <div className="skillHolder">
+                    <div className="skillBox">Java Swing</div>
+                    <div className="skillBox">WindowBuilder</div>
+                    <div className="skillBox">GUI</div>
+                    <div className="skillBox">Component events</div>
+                  </div>
+                </div>
+
+                <FaGithub size="100px" color="#892711" alt="gitIcon" />
+              </div>
+            </div>
+
+            <div className="miniSections" id="miniTitle">
+              <div className="projectPicCombo">
+                <h4 className="text2" id="heading">
+                  Website Portfolio
+                </h4>
+
                 <img
-                  src={connect4}
+                  src={websiteLink}
                   width="200px"
                   height="150px"
-                  alt="UofTlogo"
+                  alt="websiteLink"
                 />
               </div>
               <div className="descriptionAndSkills">
@@ -177,8 +225,46 @@ class Main extends Component {
                     <div className="skillBox">Component events</div>
                   </div>
                 </div>
+
+                <FaGithub size="100px" color="#892711" alt="gitIcon" />
               </div>
             </div>
+
+            <div className="miniSections" id="miniTitle">
+              <div className="projectPicCombo">
+                <h4 className="text2" id="heading">
+                  Mock Linux Shell
+                </h4>
+                <FaTerminal size="200px" color="white" />
+              </div>
+              <div className="descriptionAndSkills">
+                <ul className="textProject text2">
+                  <li>Player vs player and player vs AI compatibility</li>
+                  <li>
+                    Uses minimax algorithm with alpha beta pruning to determine
+                    ideal moves
+                  </li>
+                  <li>
+                    Various difficulties to accomodate for all different types
+                    of players
+                  </li>
+                </ul>
+
+                <div className="skillSet">
+                  <h3 className="text3" id="heading">
+                    skills
+                  </h3>
+                  <div className="skillHolder">
+                    <div className="skillBox">Java Swing</div>
+                    <div className="skillBox">WindowBuilder</div>
+                    <div className="skillBox">GUI</div>
+                    <div className="skillBox">Component events</div>
+                  </div>
+                </div>
+
+                <FaGithub size="100px" color="#892711" alt="gitIcon" />
+              </div>
+            </div> */}
           </div>
 
           <div className="title" id="sub">

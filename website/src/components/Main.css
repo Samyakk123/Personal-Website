@@ -4,14 +4,14 @@
   justify-content: space-around;
   align-items: center;
   /* padding-right: 500px; */
-  height: 120rem;
+  height: 200rem;
   /* background-color: gold; */
 }
 
 .introduction {
   /* background-color: rgb(31, 30, 6); */
-  width: 90%;
-  font-size: 2rem;
+  width: 70%;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +21,7 @@
 
 .projects {
   display: flex;
-  width: 90%;
+  width: 70%;
 
   flex-direction: column;
   justify-content: flex-start;
@@ -38,15 +38,12 @@
 }
 
 .text2 {
+  font-size: 1.5rem;
   color: rgb(179, 130, 67);
 }
 
 .text3 {
   color: rgba(230, 14, 14, 0.897);
-}
-
-.firstLetter {
-  font-size: 10rem;
 }
 
 .special {
@@ -66,7 +63,7 @@
 } */
 
 #sub {
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: bisque;
 }
 
@@ -85,11 +82,21 @@
 }
 
 #miniTitle {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 #heading {
   margin: 1px;
+
+  /* font-size: 1.5rem; */
+}
+
+#heading2 {
+  margin: 1px;
+  display: flex;
+  justify-items: center;
+  font-size: 1rem;
+  /* background-color: blueviolet; */
 }
 
 .projectPicCombo {
@@ -105,10 +112,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* margin: 1px;
-  margin-top: 15px; */
   margin: 1px;
-  /* margin-left: 40px; */
 }
 
 .skillSet {
@@ -116,7 +120,7 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  width: 20%;
+  width: 15%;
   background-color: rgba(94, 105, 105, 0.267);
 }
 
@@ -128,7 +132,7 @@
 
 .skillBox {
   flex-wrap: wrap;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background: rgb(56, 9, 9);
   padding: 0.75rem;
   border-radius: 1rem;
@@ -149,4 +153,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.header {
+  color: white;
+  font-size: 2rem;
 }
