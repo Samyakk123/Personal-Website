@@ -4,46 +4,62 @@
   justify-content: space-around;
   align-items: center;
   /* padding-right: 500px; */
-  height: 200rem;
-  /* background-color: gold; */
+  height: auto;
+  background-color: rgba(8, 25, 53, 0.993);
+  /* background-color: rgba(8, 25, 53, 0.925); */
 }
 
 .introduction {
   /* background-color: rgb(31, 30, 6); */
-  width: 70%;
+  width: 60%;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 50px;
   background-color: rgba(7, 6, 66, 0.747);
   /* height: 100vh; */
+  z-index: 10;
+  /* border: 10px solid rgba(2, 2, 29, 0.226); */
+
+  box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
 }
 
 .projects {
   display: flex;
-  width: 70%;
-
+  width: 60%;
+  margin-top: 50px;
   flex-direction: column;
   justify-content: flex-start;
   background-color: rgba(7, 6, 66, 0.747);
+
+  /* border: 10px solid rgba(2, 2, 29, 0.226); */
+  z-index: 10;
+  box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
 }
 
 .normalText {
-  font-size: 1.5rem;
+  /* display: flex;
+  flex-direction: row; */
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 80%;
-}
-
-.text {
   color: bisque;
 }
 
 .text2 {
   font-size: 1.5rem;
-  color: rgb(179, 130, 67);
+  /* color: rgb(179, 130, 67); */
+  color: rgba(230, 81, 81, 0.733);
 }
 
 .text3 {
-  color: rgba(230, 14, 14, 0.897);
+  color: rgb(231, 181, 73);
+}
+
+.text4 {
+  color: rgb(53, 56, 238);
 }
 
 .special {
@@ -55,7 +71,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 /* .image {
@@ -68,17 +84,23 @@
 }
 
 .title {
+  margin-top: 50px;
   background-color: rgba(7, 6, 66, 0.747);
 }
 
 .miniSections {
   display: flex;
   background-color: rgb(19, 17, 48);
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   margin-top: 20px;
   height: auto;
   margin: 30px;
+
+  /* box-shadow: -10px 10px 20px 20px rgba(3, 2, 42, 0.747); */
+  -webkit-box-shadow: 0 0 5px 2px rgba(3, 2, 42, 0.747);
+  -moz-box-shadow: 0 0 5px 2px rgba(3, 2, 42, 0.747);
+  box-shadow: 0 0 15px 15px rgba(3, 2, 42, 0.747);
 }
 
 #miniTitle {
@@ -86,6 +108,10 @@
 }
 
 #heading {
+  padding-left: 10px;
+  font-size: 3rem;
+  width: 70%;
+
   margin: 1px;
 
   /* font-size: 1.5rem; */
@@ -95,13 +121,13 @@
   margin: 1px;
   display: flex;
   justify-items: center;
-  font-size: 1rem;
+  font-size: 2rem;
   /* background-color: blueviolet; */
 }
 
 .projectPicCombo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   /* margin: 5px; */
   margin-left: 10px;
@@ -120,42 +146,68 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  width: 15%;
-  background-color: rgba(94, 105, 105, 0.267);
+  margin-top: 30px;
+
+  /* background-color: rgba(94, 105, 105, 0.267); */
+  background-color: rgba(27, 24, 68, 0.329);
 }
 
 .descriptionAndSkills {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  width: 90%;
+  width: 100%;
 }
 
 .skillBox {
-  flex-wrap: wrap;
   font-size: 1rem;
-  background: rgb(56, 9, 9);
+  background: rgb(46, 3, 3);
   padding: 0.75rem;
   border-radius: 1rem;
-  margin: 0.2rem;
-  width: max-content;
-  color: rgb(110, 120, 180);
+  margin: 10px;
+  color: rgb(181, 189, 235);
+
+  box-shadow: -2px 2px 20px 2px rgb(39, 3, 3);
 }
 
 .skillHolder {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
   font-family: "Times New Roman", Times, serif;
 }
 
 .imagesHolder {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
 }
 
 .header {
   color: white;
   font-size: 2rem;
+}
+
+.experience {
+  margin-top: 50px;
+}
+
+.flipper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactMe {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+.addPadding {
+  padding-top: 10px;
 }

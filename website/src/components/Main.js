@@ -2,14 +2,22 @@ import React, { Component } from "react";
 import "./Main.css";
 import Header from "./Header";
 import UofTlogo from "../images/Utoronto_coa.svg.png";
-import connect4 from "../images/GamePage.png";
-import gitIcon from "../images/gitIcon.svg";
+
 import exeFile from "../images/exe.svg";
 import websiteLink from "../images/globe-grid.svg";
-import uImpactify from "../images/UImpactify.PNG";
 import spotify from "../images/spotify.svg";
+import connect4Game from "../images/connectFour.exe";
+
+import resume from "../images/Resume_Samyak.pdf";
 
 import { FaGithub, FaTerminal } from "react-icons/fa";
+import { DiWebplatform, DiPython } from "react-icons/di";
+import { GiGamepadCross } from "react-icons/gi";
+import { RiPagesLine } from "react-icons/ri";
+import { ImLinkedin2 } from "react-icons/im";
+import { AiOutlineMail } from "react-icons/ai";
+
+import MaterialToolTip from "@material-ui/core/Tooltip";
 
 class Main extends Component {
   render() {
@@ -24,17 +32,105 @@ class Main extends Component {
             </div>
 
             <div className="format">
-              <para className="normalText text">
-                <para>I am a second year Computer Science Student at the</para>
-
-                <para className="special"> University of Toronto</para>
-
-                <para className="normalText text">
-                  , pursuing a specialist in Software Engineering with a major
-                  in Statistics!
-                </para>
-              </para>
+              <div className="flipper">
+                <div>
+                  <para className="normalText">
+                    I am a second year Computer Science Student at the
+                    <para className="special"> University of Toronto</para>,
+                    pursuing a specialist in Software Engineering with a major
+                    in Statistics!
+                  </para>
+                </div>
+                <div className="normalText">
+                  Cgpa:
+                  <strong style={{ color: "red" }}> 3.73 </strong>
+                  [4.0 scale]
+                </div>
+              </div>
               <img src={UofTlogo} width="250px" height="225px" alt="UofTlogo" />
+            </div>
+            {/* Hmm DO I WANT TO ADD THIS OR NOT? */}
+            <div className="contactMe">
+              <MaterialToolTip
+                arrow
+                interactive
+                PopperProps={{
+                  modifiers: {
+                    offset: {
+                      enabled: true,
+                      offset: "0px, -10px",
+                    },
+                  },
+                }}
+                title="Resume"
+              >
+                <a href={resume} target="_blank" rel="noreferrer">
+                  <RiPagesLine size="70px" color="grey" />
+                </a>
+              </MaterialToolTip>
+              <MaterialToolTip
+                arrow
+                interactive
+                PopperProps={{
+                  modifiers: {
+                    offset: {
+                      enabled: true,
+                      offset: "0px, -10px",
+                    },
+                  },
+                }}
+                title="Github"
+              >
+                <a
+                  href="https://github.com/Samyakk123"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub size="70px" color="orange" />
+                </a>
+              </MaterialToolTip>
+              <MaterialToolTip
+                arrow
+                interactive
+                PopperProps={{
+                  modifiers: {
+                    offset: {
+                      enabled: true,
+                      offset: "0px, -10px",
+                    },
+                  },
+                }}
+                title="Linkedin"
+              >
+                <a
+                  href="https://www.linkedin.com/in/samyak-mehta2/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ImLinkedin2 size="70px" color="lightblue" />
+                </a>
+              </MaterialToolTip>
+              <MaterialToolTip
+                arrow
+                interactive
+                PopperProps={{
+                  modifiers: {
+                    offset: {
+                      enabled: true,
+                      offset: "0px, -10px",
+                    },
+                  },
+                }}
+                title="Mail"
+              >
+                <a
+                  href="mailto:samyak.mehta@mail.utoronto.ca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiOutlineMail size="70px" color="blue" />
+                </a>
+              </MaterialToolTip>
             </div>
           </div>
 
@@ -44,15 +140,32 @@ class Main extends Component {
             </div>
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
-                <h3 className="header" id="heading">
+                <DiWebplatform size="100px" color="green" />
+                <h3 className="text4" id="heading">
                   U-Impactify
                 </h3>
-                <img
-                  src={uImpactify}
-                  width="200px"
-                  height="175px"
-                  alt="UImpactify"
-                />
+
+                <div className="imagesHolder">
+                  <a
+                    href="https://github.com/Samyakk123/U-Impactify"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub size="50px" color="#892711" alt="gitIcon" />
+                  </a>
+                  <a
+                    href="https://uimpactify.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={websiteLink}
+                      width="50px"
+                      height="50px"
+                      alt="exeFile"
+                    />
+                  </a>
+                </div>
               </div>
               <div className="descriptionAndSkills">
                 <ul className="textProject text2">
@@ -60,19 +173,19 @@ class Main extends Component {
                     Worked in a group of 7 to develop an online elearning
                     platform
                   </li>
-                  <li>
+                  <li className="addPadding">
                     Used version control with daily scrum meetings and the agile
                     development process alongside tools like Jira and Git
                   </li>
-                  <li>
+                  <li className="addPadding">
                     Supports the creation and deletion of courses, assessments,
                     uploading files, searching for employment, etc.
                   </li>
                 </ul>
 
                 <div className="skillSet">
-                  <h3 className="text3" id="heading">
-                    skills
+                  <h3 className="text3" id="heading2">
+                    tools
                   </h3>
                   <div className="skillHolder">
                     <div className="skillBox">Angular</div>
@@ -88,54 +201,51 @@ class Main extends Component {
                     <div className="skillBox">ngx-file-drop</div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="miniSections" id="miniTitle">
+              <div className="projectPicCombo">
+                <GiGamepadCross size="90px" color="#892711" />
+                <h3 className="text4" id="heading">
+                  Connect 4
+                </h3>
 
                 <div className="imagesHolder">
                   <a
-                    href="https://github.com/Samyakk123/U-Impactify"
+                    href="https://github.com/Samyakk123/Connect-4"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <FaGithub size="100px" color="#892711" alt="gitIcon" />
+                    <FaGithub size="50px" color="#892711" alt="gitIcon" />
                   </a>
-                  <a href="https://uimpactify.herokuapp.com/" target="_blank">
+
+                  <a href={connect4Game}>
                     <img
-                      src={websiteLink}
-                      width="90px"
-                      height="90px"
+                      src={exeFile}
+                      width="50px"
+                      height="50px"
                       alt="exeFile"
                     />
                   </a>
                 </div>
               </div>
-            </div>
-            {/* 
-            <div className="miniSections" id="miniTitle">
-              <div className="projectPicCombo">
-                <h3 className="text2" id="heading">
-                  Connect 4
-                </h3>
-                <img
-                  src={connect4}
-                  width="200px"
-                  height="175px"
-                  alt="UofTlogo"
-                />
-              </div>
               <div className="descriptionAndSkills">
                 <ul className="textProject text2">
                   <li>Player vs player and player vs AI compatibility</li>
-                  <li>
+                  <li className="addPadding">
                     Uses minimax algorithm with alpha beta pruning to determine
                     ideal moves
                   </li>
-                  <li>
+                  <li className="addPadding">
                     Various difficulties to accomodate for all different types
                     of players
                   </li>
                 </ul>
 
                 <div className="skillSet">
-                  <h3 className="text3" id="heading">
-                    skills
+                  <h3 className="text3" id="heading2">
+                    tools
                   </h3>
                   <div className="skillHolder">
                     <span className="skillBox">Java Swing</span>
@@ -144,115 +254,130 @@ class Main extends Component {
                     <span className="skillBox">Component events</span>
                   </div>
                 </div>
-
-                <div className="imagesHolder">
-                  <FaGithub size="100px" color="#892711" alt="gitIcon" />
-                  <img src={exeFile} width="90px" height="90px" alt="exeFile" />
-                </div>
               </div>
             </div>
 
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
-                <h4 className="text2" id="heading">
+                <img src={spotify} width="60px" height="60px" alt="spotify" />
+                <h4 className="text4" id="heading">
                   Spotify API clone
                 </h4>
-                <img src={spotify} width="200px" height="150px" alt="spotify" />
+
+                <div className="imagesHolder">
+                  <a
+                    href="https://github.com/Samyakk123/Spotify-API"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub size="50px" color="#892711" alt="gitIcon" />
+                  </a>
+                </div>
               </div>
               <div className="descriptionAndSkills">
                 <ul className="textProject text2">
-                  <li>Player vs player and player vs AI compatibility</li>
-                  <li>
-                    Uses minimax algorithm with alpha beta pruning to determine
-                    ideal moves
+                  <li>Able to upload and 'favourite' various songs</li>
+                  <li className="addPadding">
+                    Follow and unfollow other user profiles
                   </li>
-                  <li>
-                    Various difficulties to accomodate for all different types
-                    of players
+                  <li className="addPadding">
+                    Make your own playlist and query songs based on followers
                   </li>
                 </ul>
 
                 <div className="skillSet">
-                  <h3 className="text3" id="heading">
-                    skills
+                  <h3 className="text3" id="heading2">
+                    tools
                   </h3>
                   <div className="skillHolder">
-                    <div className="skillBox">Java Swing</div>
-                    <div className="skillBox">WindowBuilder</div>
-                    <div className="skillBox">GUI</div>
-                    <div className="skillBox">Component events</div>
+                    <div className="skillBox">Java</div>
+                    <div className="skillBox">Spring Boot</div>
+                    <div className="skillBox">MongoDb</div>
+                    <div className="skillBox">Neo4j</div>
                   </div>
                 </div>
-
-                <FaGithub size="100px" color="#892711" alt="gitIcon" />
               </div>
             </div>
 
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
-                <h4 className="text2" id="heading">
-                  Website Portfolio
-                </h4>
-
                 <img
                   src={websiteLink}
-                  width="200px"
-                  height="150px"
+                  width="60px"
+                  height="60px"
                   alt="websiteLink"
                 />
+                <h4 className="text4" id="heading">
+                  Website Portfolio
+                </h4>
+                <div className="imagesHolder">
+                  <a
+                    href="https://github.com/Samyakk123/Personal-Website"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub size="50px" color="#892711" alt="gitIcon" />
+                  </a>
+                </div>
               </div>
+
               <div className="descriptionAndSkills">
                 <ul className="textProject text2">
-                  <li>Player vs player and player vs AI compatibility</li>
-                  <li>
-                    Uses minimax algorithm with alpha beta pruning to determine
-                    ideal moves
-                  </li>
-                  <li>
-                    Various difficulties to accomodate for all different types
-                    of players
-                  </li>
+                  <li>Created using react, a frontend framework</li>
+                  <li className="addPadding">UPDATE LATER</li>
+                  <li className="addPadding">UPDATE LATER</li>
                 </ul>
 
                 <div className="skillSet">
-                  <h3 className="text3" id="heading">
-                    skills
+                  <h3 className="text3" id="heading2">
+                    tools
                   </h3>
                   <div className="skillHolder">
-                    <div className="skillBox">Java Swing</div>
-                    <div className="skillBox">WindowBuilder</div>
-                    <div className="skillBox">GUI</div>
-                    <div className="skillBox">Component events</div>
+                    <div className="skillBox">Html</div>
+                    <div className="skillBox">CSS</div>
+                    <div className="skillBox">JavaScript</div>
+                    <div className="skillBox">Web components</div>
                   </div>
                 </div>
-
-                <FaGithub size="100px" color="#892711" alt="gitIcon" />
               </div>
             </div>
 
             <div className="miniSections" id="miniTitle">
               <div className="projectPicCombo">
-                <h4 className="text2" id="heading">
+                <FaTerminal size="70px" color="white" />
+
+                <h4 className="text4" id="heading">
                   Mock Linux Shell
                 </h4>
-                <FaTerminal size="200px" color="white" />
+
+                <div className="imagesHolder">
+                  <a
+                    href="https://github.com/Samyakk123/Mock-Linux-Shell"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub size="50px" color="#892711" alt="gitIcon" />
+                  </a>
+                </div>
               </div>
               <div className="descriptionAndSkills">
                 <ul className="textProject text2">
-                  <li>Player vs player and player vs AI compatibility</li>
                   <li>
-                    Uses minimax algorithm with alpha beta pruning to determine
-                    ideal moves
+                    In a group of three, created a mock fileSystem to micmic the
+                    functionality of the Linux Shell
                   </li>
-                  <li>
-                    Various difficulties to accomodate for all different types
-                    of players
+                  <li className="addPadding">
+                    Followed Agile methodologies alongside various software
+                    design patterns
+                  </li>
+                  <li className="addPadding">
+                    Held daily scrum meetings to ensure productive workflow
                   </li>
                 </ul>
 
                 <div className="skillSet">
-                  <h3 className="text3" id="heading">
-                    skills
+                  <h3 className="text3" id="heading2">
+                    tools
                   </h3>
                   <div className="skillHolder">
                     <div className="skillBox">Java Swing</div>
@@ -261,13 +386,57 @@ class Main extends Component {
                     <div className="skillBox">Component events</div>
                   </div>
                 </div>
-
-                <FaGithub size="100px" color="#892711" alt="gitIcon" />
               </div>
-            </div> */}
+            </div>
+
+            <div className="miniSections" id="miniTitle">
+              <div className="projectPicCombo">
+                <DiPython size="70px" color="yellow" />
+
+                <h4 className="text4" id="heading">
+                  Goblin Fighter
+                </h4>
+
+                <div className="imagesHolder">
+                  <a
+                    href="https://github.com/Samyakk123/Mock-Linux-Shell"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub size="50px" color="#892711" alt="gitIcon" />
+                  </a>
+                </div>
+              </div>
+              <div className="descriptionAndSkills">
+                <ul className="textProject text2">
+                  <li>Player vs player and player vs AI compatibility</li>
+                  <li className="addPadding">
+                    Uses minimax algorithm with alpha beta pruning to determine
+                    ideal moves
+                  </li>
+                  <li className="addPadding">
+                    Various difficulties to accomodate for all different types
+                    of players
+                  </li>
+                </ul>
+
+                <div className="skillSet">
+                  <h3 className="text3" id="heading2">
+                    tools
+                  </h3>
+                  <div className="skillHolder">
+                    <div className="skillBox">Python</div>
+                    <div className="skillBox">Pycharm</div>
+                    <div className="skillBox">GUI</div>
+                    <div className="skillBox">Component events</div>
+                    <div className="skillBox">Mouse events</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="title" id="sub">
+          <div className="Experience title" id="sub">
             Experience
           </div>
         </div>

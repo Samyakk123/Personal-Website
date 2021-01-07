@@ -1,36 +1,49 @@
 .box {
-  padding: 80px;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  /* background: rgba(31, 31, 34, 0.918); */
-  background-image: url("../images/do-alpha.png");
+
+  background-color: rgb(7, 6, 66);
+  /* background-image: url("../images/do-alpha.png"); */
   background-position-y: -15rem;
   background-position-x: 4rem;
-  max-height: 140px;
+  height: auto;
+  padding-top: 20px;
+
   /* color: white; */
   /* font-size: 60px;
   font-family: "Langar", cursive; */
 }
 
 #title {
-  font-size: 80px;
-  font-family: "Langar", cursive;
-  color: gold;
+  font-size: 12rem;
+  font-family: Lucida Console;
+  font-weight: 700;
+  color: rgb(36, 113, 214);
   letter-spacing: 20px;
-  border-color: black;
+  /* border-color: black; */
+  text-shadow: 1px 1px 1px #363333, 1px 2px 1px #4b4545, 1px 3px 1px #389bb9,
+    1px 4px 1px #389bb9, 1px 5px 1px #389bb9, 1px 6px 1px #389bb9,
+    1px 7px 1px #389bb9, 1px 8px 1px #389bb9, 1px 9px 1px #389bb9,
+    1px 10px 1px #3a3535;
+  z-index: 10;
 }
 
 #subtitles {
   display: flex;
 
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+
+  height: auto;
+  margin: 20px;
 }
 
 #subtitle {
   /* padding-top: 5px; */
   color: rgb(255, 183, 0);
-  font-size: 25px;
+  font-size: 1.5rem;
   background-color: rgb(77, 78, 4);
   border-style: solid;
   border-color: rgb(88, 65, 5);

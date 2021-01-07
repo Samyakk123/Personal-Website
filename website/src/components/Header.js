@@ -6,8 +6,8 @@ function header() {
   return (
     <>
       <div className="box">
-        <img class="test" width="750px" height="150px" src={textToAdd} alt="" />
-        {/* <div id="title">Samyak Mehta</div> */}
+        {/* <img class="test" width="750px" height="150px" src={textToAdd} alt="" /> */}
+        <div id="title">Samyak Mehta</div>
 
         <div id="subtitles">
           <div id="subtitle">RESUME</div>
