@@ -26,12 +26,14 @@
   box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
 }
 
-.projects {
+.projects,
+.experiences {
   display: flex;
   width: 60%;
   margin-top: 50px;
   flex-direction: column;
   justify-content: flex-start;
+  /* align-items: stretch; */
   background-color: rgba(7, 6, 66, 0.747);
 
   /* border: 10px solid rgba(2, 2, 29, 0.226); */
@@ -57,10 +59,6 @@
 
 .text3 {
   color: rgb(231, 181, 73);
-}
-
-.text4 {
-  color: rgb(53, 56, 238);
 }
 
 .special {
@@ -89,26 +87,6 @@
   background-color: rgba(7, 6, 66, 0.747);
 }
 
-.miniSections {
-  display: flex;
-  background-color: rgb(19, 17, 48);
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 20px;
-  height: auto;
-  margin: 30px;
-  padding: 15px;
-
-  /* box-shadow: -10px 10px 20px 20px rgba(3, 2, 42, 0.747); */
-  -webkit-box-shadow: 0 0 5px 2px rgba(3, 2, 42, 0.747);
-  -moz-box-shadow: 0 0 5px 2px rgba(3, 2, 42, 0.747);
-  box-shadow: 0 0 15px 15px rgba(3, 2, 42, 0.747);
-}
-
-#miniTitle {
-  font-size: 1.25rem;
-}
-
 #heading {
   padding-left: 10px;
   font-size: 3rem;
@@ -125,68 +103,6 @@
   justify-items: center;
   font-size: 2rem;
   /* background-color: blueviolet; */
-}
-
-.projectPicCombo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* margin: 5px; */
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.textProject {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 1px;
-}
-
-.skillSet {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-
-  /* background-color: rgba(94, 105, 105, 0.267); */
-  background-color: rgba(27, 24, 68, 0.329);
-}
-
-.descriptionAndSkills {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.skillBox {
-  font-size: 1rem;
-  background: rgb(46, 3, 3);
-  padding: 0.75rem;
-  border-radius: 1rem;
-  margin: 10px;
-  color: rgb(181, 189, 235);
-
-  box-shadow: -2px 2px 20px 2px rgb(39, 3, 3);
-}
-
-.skillHolder {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.imagesHolder {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
 }
 
 .header {
