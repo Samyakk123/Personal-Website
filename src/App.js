@@ -7,7 +7,7 @@ import Main from "./components/Main";
 function App() {
   return (
     <div>
-      {/* <Particles
+      <Particles
         className="particles"
         params={{
           particles: {
@@ -118,7 +118,7 @@ function App() {
             },
           },
         }}
-      /> */}
+      />
       <Header />
       <Main />
     </div>

@@ -5,7 +5,8 @@
   align-items: center;
   /* padding-right: 500px; */
   height: auto;
-  background-color: rgba(8, 25, 53, 0.993);
+  /* background-color: rgba(8, 25, 53, 0.993); */
+  /* z-index: 1; */
   /* background-color: rgba(8, 25, 53, 0.925); */
 }
 

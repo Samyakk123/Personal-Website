@@ -15,7 +15,7 @@
 }
 
 #title {
-  font-size: 12rem;
+  font-size: 8rem;
   font-family: Lucida Console;
   font-weight: 700;
   color: rgb(36, 113, 214);
@@ -25,8 +25,6 @@
     1px 4px 1px #389bb9, 1px 5px 1px #389bb9, 1px 6px 1px #389bb9,
     1px 7px 1px #389bb9, 1px 8px 1px #389bb9, 1px 9px 1px #389bb9,
     1px 10px 1px #3a3535;
-
-  z-index: 10;
 }
 
 #subtitles {
@@ -36,6 +34,7 @@
   align-items: flex-end;
 
   height: auto;
+  padding-top: 20px;
   margin: 20px;
 
   /* position: -webkit-sticky; Safari */
