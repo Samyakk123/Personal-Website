@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Header.css";
-import textToAdd from "../images/coollogo_com-22784901.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function header() {
   return (
@@ -10,10 +10,9 @@ function header() {
         <div id="title">Samyak Mehta</div>
 
         <div id="subtitles">
-          <div id="subtitle">RESUME</div>
           <div id="subtitle">ABOUT ME</div>
           <div id="subtitle">PROJECTS</div>
-          <div id="subtitle">CONTACT ME</div>
+          <div id="subtitle">EXPERIENCE</div>
         </div>
       </div>
     </>

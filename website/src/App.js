@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 import Particles from "react-particles-js";
-
+import Header from "./components/Header";
 import Main from "./components/Main";
 
 function App() {
   return (
     <div>
-      <Particles
-        className="workwork"
+      {/* <Particles
+        className="particles"
         params={{
           particles: {
             number: {
@@ -117,11 +117,10 @@ function App() {
               },
             },
           },
-          retina_detect: true,
         }}
-      />
-
-      <Main></Main>
+      /> */}
+      <Header />
+      <Main />
     </div>
   );
 }

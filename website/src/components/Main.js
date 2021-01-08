@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "./Main.css";
-import Header from "./Header";
 import UofTlogo from "../images/Utoronto_coa.svg.png";
 
 import exeFile from "../images/exe.svg";
 import websiteLink from "../images/globe-grid.svg";
 import spotify from "../images/spotify.svg";
-import connect4Game from "../images/connectFour.exe";
+import connect4Game from "../images/ConnectFour.exe";
 
 import resume from "../images/Resume_Samyak.pdf";
 
@@ -19,12 +18,15 @@ import { AiOutlineMail } from "react-icons/ai";
 
 import MaterialToolTip from "@material-ui/core/Tooltip";
 
+import Particles from "react-particles-js";
+
+import config from "../images/Particles.json";
+
 class Main extends Component {
   render() {
     return (
       <div>
-        <Header />
-
+        <Particles className="particles" params={config} />
         <div className="centrePiece">
           <div className="introduction">
             <div className="text" id="sub">
@@ -148,14 +150,14 @@ class Main extends Component {
                 <div className="imagesHolder">
                   <a
                     href="https://github.com/Samyakk123/U-Impactify"
-                    target="_blank"
+                    target="__blank"
                     rel="noreferrer"
                   >
                     <FaGithub size="50px" color="#892711" alt="gitIcon" />
                   </a>
                   <a
                     href="https://uimpactify.herokuapp.com/"
-                    target="_blank"
+                    target="__blank"
                     rel="noreferrer"
                   >
                     <img
