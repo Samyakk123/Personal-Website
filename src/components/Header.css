@@ -64,3 +64,20 @@
 .links {
   cursor: pointer;
 }
+
+@media screen and (max-width: 960px) {
+  .box {
+    width: 100%;
+    padding-right: 5px;
+  }
+  #title {
+    font-size: 5rem;
+  }
+
+  #subtitles {
+    margin: 0px;
+  }
+  #subtitle {
+    font-size: 5vw;
+  }
+}

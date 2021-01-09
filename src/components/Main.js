@@ -35,14 +35,14 @@ class Main extends Component {
 
             <div className="format">
               <div className="flipper">
-                <div>
-                  <para className="normalText">
+                <div className="normalText">
+                  <para>
                     I am a 2nd year Computer Science Student at the
-                    <para style={{ color: "#2dbed2", fontWeight: "600" }}>
+                    <span style={{ color: "#2dbed2", fontWeight: "600" }}>
                       {" "}
-                      University of Toronto
-                    </para>
-                    , pursuing a specialist in Software Engineering with a major
+                      University of Toronto,
+                    </span>{" "}
+                    pursuing a specialist in Software Engineering with a major
                     in Statistics!
                   </para>
                 </div>
@@ -57,7 +57,13 @@ class Main extends Component {
                   [4.0 scale]
                 </div>
               </div>
-              <img src={UofTlogo} width="250px" height="225px" alt="UofTlogo" />
+              <img
+                className="addPadding"
+                src={UofTlogo}
+                width="250px"
+                height="225px"
+                alt="UofTlogo"
+              />
             </div>
             {/* Hmm DO I WANT TO ADD THIS OR NOT? */}
             <div className="contactMe">
@@ -138,7 +144,7 @@ class Main extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiOutlineMail size="70px" color="blue" />
+                  <AiOutlineMail size="80px" color="blue" />
                 </a>
               </MaterialToolTip>
             </div>

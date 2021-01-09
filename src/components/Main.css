@@ -3,11 +3,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* padding-right: 500px; */
   height: auto;
-  /* background-color: rgba(8, 25, 53, 0.993); */
-  /* z-index: 1; */
-  /* background-color: rgba(8, 25, 53, 0.925); */
+  width: 100%;
 }
 
 .introduction {
@@ -45,9 +42,10 @@
   flex-direction: row; */
   margin-top: 50px;
 
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  width: 80%;
+  width: 100%;
+
   color: bisque;
 }
 
@@ -80,15 +78,6 @@
   background-color: rgb(28, 26, 90);
 } */
 
-.projectPicCombo {
-  display: flex;
-  flex-direction: row;
-
-  /* margin: 5px; */
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
 #sub {
   font-size: 4.5rem;
   color: bisque;
@@ -99,16 +88,6 @@
   justify-content: center;
 
   background-color: rgba(7, 6, 66, 0.747);
-}
-
-#heading {
-  padding-left: 10px;
-  font-size: 3rem;
-  width: 70%;
-
-  margin: 1px;
-
-  /* font-size: 1.5rem; */
 }
 
 #heading2 {
@@ -162,4 +141,42 @@
   margin-left: 20px;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .format {
+    flex-direction: column;
+  }
+
+  .centrePiece {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introduction,
+  .projects,
+  .experiences {
+    width: 100%;
+
+    /* margin-left: 10px; */
+  }
+
+  .flipper {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .normalText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*
+  .introduction {
+    width: 100%;
+  } */
 }
