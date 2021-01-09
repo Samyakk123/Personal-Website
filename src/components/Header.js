@@ -10,7 +10,7 @@ function header() {
         <div id="title">Samyak Mehta</div>
 
         <div id="subtitles">
-          <div id="subtitle">ABOUT ME</div>
+          <Link id="subtitle">ABOUT ME</Link>
           <div id="subtitle">PROJECTS</div>
           <div id="subtitle">EXPERIENCE</div>
         </div>

@@ -13,7 +13,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 import MaterialToolTip from "@material-ui/core/Tooltip";
 
-import PostData from "../images/cardInfoProjects.json";
+import { PostData } from "../images/cardInfoProjects";
 
 import Particles from "react-particles-js";
 
@@ -29,7 +29,7 @@ class Main extends Component {
         <Particles className="particles" params={config} />
         <div className="centrePiece">
           <div className="introduction">
-            <div className="text" id="sub">
+            <div className="title" id="sub">
               Welcome!
             </div>
 
@@ -38,14 +38,20 @@ class Main extends Component {
                 <div>
                   <para className="normalText">
                     I am a second year Computer Science Student at the
-                    <para className="special"> University of Toronto</para>,
-                    pursuing a specialist in Software Engineering with a major
+                    <para style={{ color: "#2dbed2" }}>
+                      {" "}
+                      University of Toronto
+                    </para>
+                    , pursuing a specialist in Software Engineering with a major
                     in Statistics!
                   </para>
                 </div>
                 <div className="normalText">
-                  Cgpa:
-                  <strong style={{ color: "red" }}> 3.73 </strong>
+                  cGPA:
+                  <span style={{ color: "red", fontWeight: "600" }}>
+                    {" "}
+                    3.73{" "}
+                  </span>
                   [4.0 scale]
                 </div>
               </div>
@@ -138,7 +144,7 @@ class Main extends Component {
 
           <div className="projects">
             <div className="title" id="sub">
-              Projects!
+              Projects
             </div>
 
             {this.temp.map((eachData) => {
@@ -150,6 +156,7 @@ class Main extends Component {
             <div className="title" id="sub">
               Experience
             </div>
+
             {this.temp2.map((eachData) => {
               return <Card sendingData={eachData}></Card>;
             })}
