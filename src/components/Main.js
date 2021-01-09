@@ -15,10 +15,6 @@ import MaterialToolTip from "@material-ui/core/Tooltip";
 
 import { PostData } from "../images/cardInfoProjects";
 
-import Particles from "react-particles-js";
-
-import config from "../images/Particles.json";
-
 class Main extends Component {
   render() {
     this.temp = PostData.projects;
