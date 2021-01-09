@@ -1,16 +1,14 @@
 import websiteLink from "../images/globe-grid.svg";
 import YMCA from "../images/YMCA.png";
-import AMACCSS from "../images/AMACCSS.png";
 
-import { FaGithub, FaTerminal } from "react-icons/fa";
+import { FaTerminal } from "react-icons/fa";
 
 import exeFile from "../images/exe.svg";
 import spotify from "../images/spotify.svg";
 import UImpactify from "../images/UImpactify.png";
 import connect4Game from "../images/ConnectFour.exe";
-import { DiWebplatform, DiPython } from "react-icons/di";
+import { DiPython } from "react-icons/di";
 import { GiGamepadCross, GiTeacher } from "react-icons/gi";
-import { RiPagesLine } from "react-icons/ri";
 
 import { GiPoliceOfficerHead } from "react-icons/gi";
 
@@ -46,7 +44,15 @@ export const PostData = {
           <img src={websiteLink} width="50px" height="50px" alt="exeFile" />
         </a>
       ),
-      img: <img src={UImpactify} width="50px" height="50px" color="green" />,
+      img: (
+        <img
+          src={UImpactify}
+          width="50px"
+          height="50px"
+          color="green"
+          alt="UImpactify"
+        />
+      ),
     },
     {
       title: "Connect 4",
@@ -179,7 +185,9 @@ export const PostData = {
           <img src={websiteLink} width="50px" height="50px" alt="exeFile" />
         </a>
       ),
-      img: <img src={YMCA} width="50px" height="50px" color="#892711" />,
+      img: (
+        <img src={YMCA} width="50px" height="50px" color="#892711" alt="YMCA" />
+      ),
     },
     {
       title: "YIPI",

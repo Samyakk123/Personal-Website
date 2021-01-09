@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Particles from "react-particles-js";
 import Header from "./components/Header";
