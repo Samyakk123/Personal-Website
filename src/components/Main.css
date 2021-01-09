@@ -11,7 +11,6 @@
 }
 
 .introduction {
-  /* background-color: rgb(31, 30, 6); */
   width: 60%;
 
   font-size: 1.5rem;
@@ -21,11 +20,8 @@
 
   margin-top: 50px;
   background-color: rgba(7, 6, 66, 0.747);
-  /* height: 100vh; */
-  z-index: 10;
-  /* border: 10px solid rgba(2, 2, 29, 0.226); */
-
   box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
+  z-index: 10;
 }
 
 .projects,

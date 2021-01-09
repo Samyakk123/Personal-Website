@@ -28,7 +28,7 @@ class Main extends Component {
       <div>
         <Particles className="particles" params={config} />
         <div className="centrePiece">
-          <div className="introduction">
+          <div className="introduction" id="intro">
             <div className="title" id="sub">
               Welcome!
             </div>
@@ -37,8 +37,8 @@ class Main extends Component {
               <div className="flipper">
                 <div>
                   <para className="normalText">
-                    I am a second year Computer Science Student at the
-                    <para style={{ color: "#2dbed2" }}>
+                    I am a 2nd year Computer Science Student at the
+                    <para style={{ color: "#2dbed2", fontWeight: "600" }}>
                       {" "}
                       University of Toronto
                     </para>
@@ -48,7 +48,9 @@ class Main extends Component {
                 </div>
                 <div className="normalText">
                   cGPA:
-                  <span style={{ color: "red", fontWeight: "600" }}>
+                  <span
+                    style={{ color: "rgb(13, 208, 243)", fontWeight: "600" }}
+                  >
                     {" "}
                     3.73{" "}
                   </span>
@@ -142,7 +144,7 @@ class Main extends Component {
             </div>
           </div>
 
-          <div className="projects">
+          <div className="projects" id="proj">
             <div className="title" id="sub">
               Projects
             </div>
@@ -152,7 +154,7 @@ class Main extends Component {
             })}
           </div>
 
-          <div className="experiences">
+          <div className="experiences" id="experience">
             <div className="title" id="sub">
               Experience
             </div>

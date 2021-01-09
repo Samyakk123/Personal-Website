@@ -108,14 +108,15 @@
 
 .skillBox {
   font-size: 1rem;
-  background: rgb(46, 3, 3);
-  /* background: rgb(195, 100, 123); */
+  /* background: rgb(46, 3, 3); */
+  /*background: rgb(13, 208, 243);*/
+  background: rgb(85, 5, 5);
   padding: 0.75rem;
   border-radius: 1rem;
   margin: 10px;
-  color: rgb(181, 189, 235);
-  /* box-shadow: -2px 2px 20px 2px rgb(190, 100, 123); */
-  box-shadow: -2px 2px 20px 2px rgb(39, 3, 3);
+  color: white;
+  box-shadow: -2px 2px 15px 2px rgba(85, 5, 5, 0.712);
+  /* box-shadow: -2px 2px 20px 2px rgb(39, 3, 3); */
 }
 
 .seminar {

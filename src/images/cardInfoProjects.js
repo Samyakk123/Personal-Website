@@ -14,19 +14,6 @@ import { RiPagesLine } from "react-icons/ri";
 
 import { GiPoliceOfficerHead } from "react-icons/gi";
 
-export const iconArr = [
-  FaGithub,
-  DiPython,
-  FaTerminal,
-  GiGamepadCross,
-  RiPagesLine,
-  DiWebplatform,
-  exeFile,
-  websiteLink,
-  spotify,
-  connect4Game,
-];
-
 export const PostData = {
   projects: [
     {

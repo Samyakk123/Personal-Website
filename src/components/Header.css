@@ -4,10 +4,13 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: rgb(7, 6, 66);
+  /* background-color: rgba(7, 6, 66, 0.664); */
 
   height: auto;
   padding-top: 20px;
+
+  background-color: rgba(7, 6, 66, 0.747);
+  box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
 
   /* color: white; */
   /* font-size: 60px;
@@ -16,17 +19,19 @@
 
 #title {
   font-size: 8rem;
-  font-family: Lucida Console;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
-  color: rgb(36, 113, 214);
+  color: white;
   text-transform: uppercase;
   margin-top: 30px;
   /* letter-spacing: 20px; */
   /* border-color: black; */
-  text-shadow: 1px 1px 1px #363333, 1px 2px 1px #4b4545, 1px 3px 1px #389bb9,
-    1px 4px 1px #389bb9, 1px 5px 1px #389bb9, 1px 6px 1px #389bb9,
-    1px 7px 1px #389bb9, 1px 8px 1px #389bb9, 1px 9px 1px #389bb9,
-    1px 10px 1px #3a3535;
+  text-shadow: 1px 3px 1px white, 1px 4px 1px rgb(36, 113, 214),
+    1px 5px 1px rgb(36, 113, 214), 1px 6px 1px rgb(36, 113, 214),
+    1px 7px 1px rgb(36, 113, 214), 1px 12px 1px rgb(36, 113, 214),
+    1px 9px 1px rgb(36, 113, 214);
+
+  box-shadow: -10px 10px 20px 8px rgba(9, 5, 151, 0.747);
 }
 
 #subtitles {
@@ -46,7 +51,7 @@
 
 #subtitle {
   /* padding-top: 5px; */
-  color: rgb(19, 111, 218);
+  color: #2dbed2;
   font-size: 1.5rem;
   background-color: rgb(2, 32, 71);
   border-style: solid;
