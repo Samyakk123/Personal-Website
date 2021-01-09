@@ -11,6 +11,7 @@ function header() {
 
         <div id="subtitles">
           <Link
+            className="links"
             id="subtitle"
             activeClass="active"
             to="intro"
@@ -22,6 +23,7 @@ function header() {
             ABOUT ME
           </Link>
           <Link
+            className="links"
             id="subtitle"
             activeClass="active"
             to="proj"
@@ -33,7 +35,7 @@ function header() {
             PROJECTS
           </Link>
           <Link
-            Link
+            className="links"
             id="subtitle"
             activeClass="active"
             to="experience"
