@@ -26,7 +26,6 @@ class Main extends Component {
 
     return (
       <div>
-        <Particles className="particles" params={config} />
         <div className="centrePiece">
           <div className="introduction" id="intro">
             <div className="title" id="sub">
