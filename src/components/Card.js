@@ -1,14 +1,7 @@
 import React, { Component } from "react";
-import websiteLink from "../images/globe-grid.svg";
-import { FaGithub, FaTerminal } from "react-icons/fa";
-import "./Card.css";
 
-import exeFile from "../images/exe.svg";
-import spotify from "../images/spotify.svg";
-import connect4Game from "../images/ConnectFour.exe";
-import { DiWebplatform, DiPython } from "react-icons/di";
-import { GiGamepadCross } from "react-icons/gi";
-import { RiPagesLine } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+import "./Card.css";
 
 // import ReactHtmlParser, {
 //   processNodes,
