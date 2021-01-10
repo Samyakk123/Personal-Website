@@ -2,9 +2,13 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-scroll";
 
+import Particles from "react-particles-js";
+import config from "../images/Particles.json";
+
 function header() {
   return (
     <>
+      <Particles className="particles" params={config} />
       <div className="box">
         {/* <img class="test" width="750px" height="150px" src={textToAdd} alt="" /> */}
         <div id="title">Samyak Mehta</div>

@@ -5,6 +5,7 @@
   align-items: center;
   height: auto;
   width: 100%;
+  z-index: 1;
 }
 
 .introduction {
@@ -17,7 +18,8 @@
 
   margin-top: 100px;
   /* background-color: rgba(7, 6, 66, 0.747); */
-  background-color: rgba(12, 12, 43, 0.829);
+  background-color: var(--box-color);
+  /* background-color: rgba(12, 12, 43, 0.829); */
   box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
   z-index: 10;
 }
@@ -30,8 +32,9 @@
 
   flex-direction: column;
   justify-content: flex-start;
-  /* background-color: rgba(7, 6, 66, 0.747); */
-  background-color: rgba(12, 12, 43, 0.829);
+
+  /* background-color: rgba(12, 12, 43, 0.829); */
+  background-color: var(--box-color);
 
   z-index: 10;
   box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
@@ -45,7 +48,7 @@
   width: 100%;
   /* 
   display: flex; */
-  color: rgb(255, 227, 194);
+  color: var(--white);
 }
 
 .text3 {
@@ -72,15 +75,15 @@
 
 #sub {
   font-size: 4.5rem;
-  color: bisque;
+  color: #e9e1e1;
 }
 
 .title {
   display: flex;
   justify-content: center;
-
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #heading2 {
