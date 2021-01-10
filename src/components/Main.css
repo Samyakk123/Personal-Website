@@ -9,7 +9,7 @@
 }
 
 .introduction {
-  width: 60%;
+  width: 65%;
 
   font-size: 1.5rem;
   display: flex;
@@ -27,7 +27,7 @@
 .projects,
 .experiences {
   display: flex;
-  width: 60%;
+  width: 65%;
   margin-top: 100px;
 
   flex-direction: column;
@@ -75,7 +75,7 @@
 
 #sub {
   font-size: 4.5rem;
-  color: #e9e1e1;
+  color: var(--white);
 }
 
 .title {

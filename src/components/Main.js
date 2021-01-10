@@ -25,7 +25,7 @@ class Main extends Component {
         <div className="centrePiece">
           <div className="introduction" id="intro">
             <div className="title" id="sub">
-              Welcome!
+              WELCOME
             </div>
 
             <div className="format">
@@ -147,7 +147,7 @@ class Main extends Component {
 
           <div className="projects" id="proj">
             <div className="title" id="sub">
-              Projects
+              PROJECTS
             </div>
 
             {this.temp.map((eachData) => {
@@ -157,7 +157,7 @@ class Main extends Component {
 
           <div className="experiences" id="experience">
             <div className="title" id="sub">
-              Experience
+              EXPERIENCE
             </div>
 
             {this.temp2.map((eachData) => {
