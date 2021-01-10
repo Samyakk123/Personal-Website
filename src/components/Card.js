@@ -29,7 +29,7 @@ class Card extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaGithub size="50px" color="#892711" alt="gitIcon" />
+                  <FaGithub id="git" size="50px" alt="gitIcon" />
                 </a>
               ) : (
                 ""

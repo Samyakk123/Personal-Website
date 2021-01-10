@@ -7,8 +7,8 @@
   height: auto;
   margin: 30px;
   padding: 15px;
+  border-radius: 10px;
 
-  /* box-shadow: -10px 10px 20px 20px rgba(3, 2, 42, 0.747); */
   -webkit-box-shadow: 0 0 5px 2px rgba(3, 2, 42, 0.747);
   -moz-box-shadow: 0 0 5px 2px rgba(3, 2, 42, 0.747);
   box-shadow: 0 0 15px 15px rgba(3, 2, 42, 0.747);
@@ -22,13 +22,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* margin: 5px; */
+
   margin-left: 10px;
   margin-bottom: 10px;
 }
 
 .text4 {
-  /* color: rgb(53, 56, 238); */
   color: #2dbed2;
 }
 
@@ -38,8 +37,6 @@
   width: 70%;
 
   margin: 1px;
-
-  /* font-size: 1.5rem; */
 }
 .imagesHolder {
   display: flex;
@@ -61,13 +58,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   margin: 1px;
+  font-family: var(--projectText);
 }
 
 .text2 {
   font-size: 1.5rem;
-  /* color: rgb(179, 130, 67); */
-  /* color: rgba(230, 81, 81, 0.733); */
-  color: rgba(255, 255, 255, 0.671);
+  color: rgb(255, 255, 255);
 }
 
 .addPadding {
@@ -81,7 +77,6 @@
   align-items: center;
   margin-top: 30px;
 
-  /* background-color: rgba(94, 105, 105, 0.267); */
   background-color: rgb(19, 17, 48);
 }
 
@@ -94,7 +89,6 @@
   display: flex;
   justify-items: center;
   font-size: 2rem;
-  /* background-color: blueviolet; */
 }
 
 .skillHolder {
@@ -103,20 +97,17 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .skillBox {
   font-size: 1rem;
-  /* background: rgb(46, 3, 3); */
-  /*background: rgb(13, 208, 243);*/
   background: rgb(85, 5, 5);
   padding: 0.75rem;
   border-radius: 1rem;
   margin: 10px;
   color: white;
-  box-shadow: -2px 2px 15px 2px rgba(85, 5, 5, 0.712);
-  /* box-shadow: -2px 2px 20px 2px rgb(39, 3, 3); */
+  box-shadow: var(--bob);
+  font-family: var(--projectText);
 }
 
 .seminar {
@@ -136,6 +127,16 @@
 .specialCase {
   display: flex;
   flex-direction: column;
+}
+
+#git {
+  color: rgb(137, 39, 17);
+}
+
+#git:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  color: rgb(175, 61, 36);
 }
 
 @media screen and (max-width: 960px) {

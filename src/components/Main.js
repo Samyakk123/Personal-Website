@@ -47,8 +47,8 @@ class Main extends Component {
                     style={{ color: "rgb(13, 208, 243)", fontWeight: "600" }}
                   >
                     {" "}
-                    3.73{" "}
-                  </span>
+                    3.73
+                  </span>{" "}
                   [4.0 scale]
                 </div>
               </div>
@@ -76,7 +76,7 @@ class Main extends Component {
                 title="Resume"
               >
                 <a href={resume} target="_blank" rel="noreferrer">
-                  <RiPagesLine size="70px" color="grey" />
+                  <RiPagesLine id="ResumeForm" size="70px" />
                 </a>
               </MaterialToolTip>
               <MaterialToolTip
@@ -97,7 +97,7 @@ class Main extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaGithub size="70px" color="orange" />
+                  <FaGithub id="GithubForm" size="70px" />
                 </a>
               </MaterialToolTip>
               <MaterialToolTip
@@ -118,7 +118,7 @@ class Main extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <ImLinkedin2 size="70px" color="lightblue" />
+                  <ImLinkedin2 id="linkedinForm" size="70px" />
                 </a>
               </MaterialToolTip>
               <MaterialToolTip
@@ -139,7 +139,7 @@ class Main extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiOutlineMail size="80px" color="blue" />
+                  <AiOutlineMail id="mailForm" size="80px" />
                 </a>
               </MaterialToolTip>
             </div>

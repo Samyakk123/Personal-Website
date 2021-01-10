@@ -15,8 +15,9 @@
   flex-direction: column;
   justify-content: center;
 
-  margin-top: 50px;
-  background-color: rgba(7, 6, 66, 0.747);
+  margin-top: 100px;
+  /* background-color: rgba(7, 6, 66, 0.747); */
+  background-color: rgba(12, 12, 43, 0.829);
   box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
   z-index: 10;
 }
@@ -25,28 +26,26 @@
 .experiences {
   display: flex;
   width: 60%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+
   flex-direction: column;
   justify-content: flex-start;
-  /* align-items: stretch; */
-  background-color: rgba(7, 6, 66, 0.747);
+  /* background-color: rgba(7, 6, 66, 0.747); */
+  background-color: rgba(12, 12, 43, 0.829);
 
-  /* border: 10px solid rgba(2, 2, 29, 0.226); */
   z-index: 10;
   box-shadow: -10px 10px 20px 8px rgba(3, 2, 42, 0.747);
 }
 
 .normalText {
-  /* display: flex;
-  flex-direction: row; */
   margin-top: 50px;
-
+  padding-left: 15px;
   font-size: 1.75rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--projectText);
   width: 100%;
-
-  color: bisque;
+  /* 
+  display: flex; */
+  color: rgb(255, 227, 194);
 }
 
 .text3 {
@@ -54,7 +53,6 @@
 }
 
 .special {
-  /* color: rgb(90, 90, 224); */
   color: #2dbed2;
 }
 #heading {
@@ -63,8 +61,6 @@
   width: 70%;
 
   margin: 1px;
-
-  /* font-size: 1.5rem; */
 }
 
 .format {
@@ -73,10 +69,6 @@
   align-items: center;
   justify-content: center;
 }
-
-/* .image {
-  background-color: rgb(28, 26, 90);
-} */
 
 #sub {
   font-size: 4.5rem;
@@ -87,7 +79,8 @@
   display: flex;
   justify-content: center;
 
-  background-color: rgba(7, 6, 66, 0.747);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #heading2 {
@@ -95,7 +88,6 @@
   display: flex;
   justify-items: center;
   font-size: 2rem;
-  /* background-color: blueviolet; */
 }
 
 .header {
@@ -103,13 +95,14 @@
   font-size: 2rem;
 }
 
-.experience {
-  margin-top: 50px;
+#experience {
+  margin-bottom: 50px;
 }
 
 .flipper {
   display: flex;
   flex-direction: column;
+
   margin-left: 20px;
 }
 
@@ -129,11 +122,6 @@
   flex-direction: column;
 }
 
-#specialFontCase {
-  font-size: 1.25rem;
-  color: rgb(83, 4, 4);
-}
-
 .seminar {
   display: flex;
   flex-direction: column;
@@ -143,6 +131,44 @@
   align-items: center;
 }
 
+#ResumeForm {
+  color: grey;
+}
+
+#GithubForm {
+  color: rgb(204, 148, 43);
+}
+
+#linkedinForm {
+  color: lightblue;
+}
+
+#mailForm {
+  color: rgb(56, 56, 219);
+}
+#ResumeForm:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  color: rgb(185, 183, 183);
+}
+
+#GithubForm:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  color: orange;
+}
+
+#linkedinForm:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  color: rgb(91, 185, 216);
+}
+
+#mailForm:hover {
+  transform: scale(1.15);
+  transition-duration: 0.5s;
+  color: blue;
+}
 @media screen and (max-width: 960px) {
   .format {
     flex-direction: column;

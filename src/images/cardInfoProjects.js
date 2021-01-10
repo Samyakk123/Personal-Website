@@ -9,6 +9,7 @@ import UImpactify from "../images/UImpactify.png";
 import connect4Game from "../images/ConnectFour.exe";
 import { DiPython } from "react-icons/di";
 import { GiGamepadCross, GiTeacher } from "react-icons/gi";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 import { GiPoliceOfficerHead } from "react-icons/gi";
 
@@ -41,7 +42,7 @@ export const PostData = {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={websiteLink} width="50px" height="50px" alt="exeFile" />
+          <BsBoxArrowUpRight id="git" size="50px" alt="exeFile" />
         </a>
       ),
       img: (
@@ -141,7 +142,7 @@ export const PostData = {
       tools: [],
       external: (
         <a href="https://www.amacss.org/" target="_blank" rel="noreferrer">
-          <img src={websiteLink} width="50px" height="50px" alt="exeFile" />
+          <BsBoxArrowUpRight id="git" size="50px" alt="exeFile" />
         </a>
       ),
 
@@ -150,6 +151,7 @@ export const PostData = {
         <div className="seminar">
           <div className="textProject text2">
             <a
+              style={{ color: "#2dbed2" }}
               href="https://www.youtube.com/watch?v=bFNTCCG0ox8&t=1435s"
               target="_blank"
               rel="noreferrer"
@@ -161,7 +163,7 @@ export const PostData = {
         </div>
       ),
       subtitle: (
-        <span id="specialFontCase">
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
           (The Association of Mathematical And Computer Science Students)
         </span>
       ),
@@ -182,7 +184,7 @@ export const PostData = {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={websiteLink} width="50px" height="50px" alt="exeFile" />
+          <BsBoxArrowUpRight id="git" size="50px" alt="exeFile" />
         </a>
       ),
       img: (
@@ -204,14 +206,21 @@ export const PostData = {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={websiteLink} width="50px" height="50px" alt="exeFile" />
+          <BsBoxArrowUpRight id="git" size="50px" alt="exeFile" />
         </a>
       ),
       img: <GiPoliceOfficerHead size="70px" color="grey" />,
       subtitle: (
-        <span id="specialFontCase" style={{ fontSize: "1.5rem" }}>
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
           (Youth In Policing Initiative,
-          <span style={{ color: "rgba(258, 153, 0, 0.95)" }}> Division 41</span>
+          <span
+            style={{
+              color: "rgba(258, 153, 0, 0.95)",
+            }}
+          >
+            {" "}
+            Division 41
+          </span>
           )
         </span>
       ),

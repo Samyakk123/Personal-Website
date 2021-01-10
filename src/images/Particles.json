@@ -8,12 +8,12 @@
       }
     },
     "color": {
-      "value": "#2DBED2"
+      "value": "#9757D7"
     },
     "shape": {
-      "type": "edge",
+      "type": "circle",
       "stroke": {
-        "width": 0,
+        "width": 3,
         "color": "#000000"
       },
       "polygon": {
@@ -54,7 +54,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 0.5,
       "direction": "bottom",
       "random": false,
       "straight": false,
