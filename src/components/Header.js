@@ -7,7 +7,7 @@ import config from "../images/Particles.json";
 
 function header() {
   return (
-    <>
+    <div>
       <Particles className="particles" params={config} />
       <div className="box">
         {/* <img class="test" width="750px" height="150px" src={textToAdd} alt="" /> */}
@@ -52,7 +52,7 @@ function header() {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

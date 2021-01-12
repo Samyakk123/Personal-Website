@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Main.css";
 import UofTlogo from "../images/Utoronto_coa.svg.png";
 
-import resume from "../images/Resume_Samyak.pdf";
+import resume from "../images/SamyakMehta_Resume.pdf";
 import Card from "../components/Card";
 
 import { FaGithub } from "react-icons/fa";
