@@ -132,12 +132,12 @@ export const PostData = {
 
   experiences: [
     {
-      title: "AMACCSS",
+      title: "AMACSS",
       github: "",
       description: [
-        "Held midterm and final exam review seminars for first year students",
+        "Hold midterm and final exam review seminars for first year students",
         "Weekly office hours to help students address issues with first year CSM courses",
-        "Worked alongside other team members to effectively run smooth events",
+        "Working alongside other team members to effectively run smooth events",
       ],
       tools: [],
       external: (
