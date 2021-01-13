@@ -89,8 +89,8 @@ export const PostData = {
       github: "https://github.com/Samyakk123/Personal-Website",
       description: [
         "Created using react, a frontend framework",
-        "UPDATE LATER",
-        "UPDATE LATER",
+        "Used material-ui and particle.js for tooltips and background",
+        "Hosted using netlify",
       ],
       tools: ["Html", "CSS", "JavaScript", "Web Components"],
       external: "",
@@ -120,9 +120,9 @@ export const PostData = {
       title: "Goblin Fighter",
       github: "https://github.com/Samyakk123/Goblin-fighters",
       description: [
-        "Player vs player and player vs AI compatibility",
-        "Uses minimax algorithm with alpha beta pruning to determine ideal moves",
-        "Various difficulties to accomodate for all different types of players",
+        "Used PyCharm to create an interactive side-scroller game with custom designed classes to create autogenerating waves of titans and lasers",
+        "Used a greenscreen to place ourselves as inanimate characters randomized upon starting of the game",
+        "Initiated daily meetings to ensure effective communication and updates amongst partners",
       ],
       tools: ["Python", "PyCharm", "GUI", "Component events", "Mouse events"],
       external: "",
