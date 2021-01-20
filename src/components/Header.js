@@ -9,6 +9,7 @@ function header() {
   return (
     <div>
       <Particles className="particles" params={config} />
+      {/* <div className="temporary">Put some text here</div> */}
       <div className="box">
         {/* <img class="test" width="750px" height="150px" src={textToAdd} alt="" /> */}
         <div id="title">Samyak Mehta</div>

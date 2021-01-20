@@ -92,7 +92,7 @@ export const PostData = {
         "Used material-ui and particle.js for tooltips and background",
         "Hosted using netlify",
       ],
-      tools: ["Html", "CSS", "JavaScript", "Web Components"],
+      tools: ["ReactJs", "Html", "CSS", "JavaScript", "Web Components"],
       external: "",
       img: (
         <a

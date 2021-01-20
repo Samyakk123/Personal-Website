@@ -1,5 +1,6 @@
 .box {
   display: flex;
+  overflow: auto;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -31,14 +32,14 @@
   display: flex;
 
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-start;
 
   height: auto;
   padding-top: 20px;
   margin: 20px;
 
-  /* position: -webkit-sticky; Safari */
-  /* position: sticky; */
+  position: sticky;
+  top: 50px;
 }
 
 #subtitle {
@@ -85,6 +86,12 @@
   height: 100%;
   z-index: -1;
 }
+/* 
+.temporary {
+  background-color: red;
+  position: sticky;
+  top: 50px;
+} */
 
 @media screen and (max-width: 960px) {
   .box {
