@@ -32,7 +32,7 @@ class Main extends Component {
               <div className="flipper">
                 <div className="normalText">
                   <para>
-                    I am a 2nd year Computer Science Student at the
+                    I am a second year Computer Science Student at the
                     <span style={{ color: "#2dbed2", fontWeight: "600" }}>
                       {" "}
                       University of Toronto,
@@ -40,16 +40,17 @@ class Main extends Component {
                     pursuing a specialist in Software Engineering with a major
                     in Statistics!
                   </para>
-                </div>
-                <div className="normalText">
-                  cGPA:
-                  <span
-                    style={{ color: "rgb(13, 208, 243)", fontWeight: "600" }}
-                  >
-                    {" "}
-                    3.73
-                  </span>{" "}
-                  [4.0 scale]
+
+                  <div className="normalText" id="bold">
+                    cGPA:
+                    <span
+                      style={{ color: "rgb(13, 208, 243)", fontWeight: "600" }}
+                    >
+                      {" "}
+                      3.73
+                    </span>{" "}
+                    [4.0 scale]
+                  </div>
                 </div>
               </div>
               <img

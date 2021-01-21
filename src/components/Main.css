@@ -48,7 +48,12 @@
   width: 100%;
   /* 
   display: flex; */
+
   color: var(--white);
+}
+
+#bold {
+  font-weight: bold;
 }
 
 .text3 {

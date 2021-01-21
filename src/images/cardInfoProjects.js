@@ -6,7 +6,6 @@ import { FaTerminal } from "react-icons/fa";
 import exeFile from "../images/exe.svg";
 import spotify from "../images/spotify.svg";
 import UImpactify from "../images/UImpactify.png";
-import connect4Game from "../images/ConnectFour.exe";
 import { DiPython } from "react-icons/di";
 import { GiGamepadCross, GiTeacher } from "react-icons/gi";
 import { BsBoxArrowUpRight } from "react-icons/bs";
@@ -65,7 +64,7 @@ export const PostData = {
       ],
       tools: ["Java Swing", "WindowBuilder", "GUI", "Component events"],
       external: (
-        <a href={connect4Game}>
+        <a href="https://www.dropbox.com/s/1kxzexp4036xide/Connect%20Four.exe?dl=0">
           <img src={exeFile} width="50px" height="50px" alt="exeFile" />
         </a>
       ),
