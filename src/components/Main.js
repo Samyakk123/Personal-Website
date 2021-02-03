@@ -33,7 +33,7 @@ class Main extends Component {
                 <div className="normalText">
                   <para>
                     I am a second year Computer Science Student at the
-                    <span style={{ color: "#2dbed2", fontWeight: "600" }}>
+                    <span style={{ color: "#1049ef", fontWeight: "600" }}>
                       {" "}
                       University of Toronto,
                     </span>{" "}
@@ -44,7 +44,7 @@ class Main extends Component {
                   <div className="normalText" id="bold">
                     cGPA:
                     <span
-                      style={{ color: "rgb(13, 208, 243)", fontWeight: "600" }}
+                      style={{ color: "#1049ef", fontWeight: "600" }}
                     >
                       {" "}
                       3.73
