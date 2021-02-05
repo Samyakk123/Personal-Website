@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: "Langar", -apple-system, BlinkMacSystemFont, cursive, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: "Raleway", sans-serif, "Langar", -apple-system,
+    BlinkMacSystemFont, cursive, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   /* background-color: rgba(8, 25, 53, 0.993); */
-  background-color: rgb(0, 2, 15);
+  background-color: rgb(0, 0, 0);
 }
 
 code {
@@ -30,6 +30,6 @@ code {
   --projectText: "IBM Plex Sans", sans-serif;
   --bob: -1px 1px 15px 2px rgba(0, 0, 0, 0.836);
   --white: #e9e1e1;
-  --box-color: rgba(21, 21, 49, 0.897);
+  --box-color: rgb(0, 0, 0);
   --cardTextColor: #2dbed2;
 }

@@ -1,6 +1,6 @@
 .miniSections {
   display: flex;
-  background-color: rgb(12, 10, 34);
+  background-color: rgba(17, 17, 24, 0.678);
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 20px;
@@ -9,9 +9,9 @@
   padding: 15px;
   border-radius: 10px;
 
-  -webkit-box-shadow: 0 0 5px 2px rgba(3, 2, 42, 0.747);
-  -moz-box-shadow: 0 0 5px 2px rgba(3, 2, 42, 0.747);
-  box-shadow: 0 0 15px 15px rgba(3, 2, 42, 0.747);
+  -webkit-box-shadow: 0 0 5px 2px rgba(43, 43, 44, 0.678);
+  -moz-box-shadow: 0 0 5px 2px rgba(43, 43, 44, 0.678);
+  box-shadow: 0 0 15px 10px rgba(43, 43, 44, 0.678);
 }
 
 #miniTitle {
@@ -33,7 +33,6 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   /* color: #2dbed2; */
   color: #6c91cf;
-
 }
 
 #heading {
@@ -82,7 +81,7 @@
   align-items: center;
   margin-top: 30px;
 
-  background-color: rgb(19, 17, 48);
+  background-color: rgba(25, 25, 31, 0.678);
 }
 
 .text3 {
