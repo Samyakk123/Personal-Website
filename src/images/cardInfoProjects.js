@@ -130,8 +130,77 @@ export const PostData = {
   ],
 
   experiences: [
+
     {
-      title: "AMACSS",
+      title: "Full Stack Developer",
+      github: "",
+      description: [ "Reduced Firebase database calls by 60% by batch updating existing NoSQL queries",
+        "Leveraged Google Cloud APIs to capture, process, and analyze voice input using machine learning",
+        "Developed IELTS training modules using React and Styled Components, utilized by over 400 international university students"],
+      tools: [],
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          University of Toronto
+        </span>
+      )
+    },
+
+    {
+      title: "Frontend Developer",
+      github: "",
+      description: ["Minimized page load time from seconds to instant by migrating from old university servers to GitHub Pages",
+        "Designed and developed new UI screens using Figma, Bootstrap and JQuery for future organization events",
+        "Facilitated weekly demo meetings using Microsoft Teams, showcasing features to 20+ organization executives" ],
+
+      tools: [],
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          MEIO (Medical Education Initiative Organization)
+        </span>
+      )
+    },
+
+
+
+    
+    {
+      title: "Developer",
+      github: "",
+      description: [
+        "Automated manual client forms improving efficiency by 20% through refining catalog items used by 200+ FundSERV members",
+        "Configured virtual machine infrastructures using SQL to connect existing internal developer service portals",
+        "Developed API integrations using JavaScript to transfer confidential client data across numerous platforms including salesforce and ServiceNow"
+      ],
+      
+      tools: [],
+
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          FundSERV Inc.
+        </span>
+      ),
+
+    },
+
+    {
+      title: "Teaching Assistant",
+      github: "",
+      description: [
+        "Teaching Assistant for CSCA20 (Introduction to Programming)",
+        "Hold weekly tutorials and assist in marking process of exmainations",
+        "Answer student concerns about course material"
+      ],
+      tools: [],
+
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          University of Toronto
+        </span>
+      ),
+    },
+    
+    {
+      title: "AMACSSS",
       github: "",
       description: [
         "Hold midterm and final exam review seminars for first year students",
@@ -169,7 +238,7 @@ export const PostData = {
     },
 
     {
-      title: "YMCA Camp Counselor",
+      title: "Camp Counselor",
       github: "",
       description: [
         "Taught campers a range of outdoor activities and ensured the safe use and return of equipement",
@@ -188,6 +257,11 @@ export const PostData = {
       ),
       img: (
         <img src={YMCA} width="50px" height="50px" color="#892711" alt="YMCA" />
+      ),
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          YMCA
+        </span>
       ),
     },
     {

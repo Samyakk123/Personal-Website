@@ -6,7 +6,7 @@ import resume from "../images/SamyakMehta_Resume.pdf";
 import Card from "../components/Card";
 
 import { FaGithub } from "react-icons/fa";
-
+//
 import { RiPagesLine } from "react-icons/ri";
 import { ImLinkedin2 } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
