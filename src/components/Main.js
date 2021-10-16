@@ -32,7 +32,7 @@ class Main extends Component {
               <div className="flipper">
                 <div className="normalText">
                   <para>
-                    I am a second year Computer Science Student at the
+                    I am a third year Computer Science Student at the
                     <span style={{ color: "#1049ef", fontWeight: "600" }}>
                       {" "}
                       University of Toronto,
@@ -146,6 +146,16 @@ class Main extends Component {
             </div>
           </div>
 
+          <div className="experiences" id="experience">
+            <div className="title" id="sub">
+              EXPERIENCE
+            </div>
+
+            {this.temp2.map((eachData) => {
+              return <Card sendingData={eachData}></Card>;
+            })}
+          </div>
+
           <div className="projects" id="proj">
             <div className="title" id="sub">
               PROJECTS
@@ -156,15 +166,6 @@ class Main extends Component {
             })}
           </div>
 
-          <div className="experiences" id="experience">
-            <div className="title" id="sub">
-              EXPERIENCE
-            </div>
-
-            {this.temp2.map((eachData) => {
-              return <Card sendingData={eachData}></Card>;
-            })}
-          </div>
         </div>
       </div>
     );

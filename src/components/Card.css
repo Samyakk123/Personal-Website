@@ -109,7 +109,8 @@
   /* background: rgb(85, 5, 5); */
   background: rgb(58, 9, 9);
   padding: 0.75rem;
-  border-radius: 5rem;
+  /* border-radius: 5rem; */
+  border-radius: 50% / 25%;
 
   border-color: rgba(37, 1, 1);
   border-style: outset;
