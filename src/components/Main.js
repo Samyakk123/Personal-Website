@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./Main.css";
 import UofTlogo from "../images/Utoronto_coa.svg.png";
 
@@ -16,6 +16,15 @@ import MaterialToolTip from "@material-ui/core/Tooltip";
 import { PostData } from "../images/cardInfoProjects";
 
 class Main extends Component {
+  
+  constructor(props){
+    super(props);
+    this.state = {
+      selected: 0,
+      type: "All"
+    };
+  }
+  
   render() {
     this.temp = PostData.projects;
     this.temp2 = PostData.experiences;
@@ -150,10 +159,19 @@ class Main extends Component {
             <div className="title" id="sub">
               EXPERIENCE
             </div>
+              
+            <div id="subtitles2">
+              {
+                ["All", "Internships", "Part Time", "Full Time", "Outdated"].map((eachData, ind) => {
+                  return <div onClick={()=> {this.setState({selected: ind, type: eachData})}} className={ind!==this.state.selected ? "links" : "links selected"} id={ind!==this.state.selected ? "subtitle" : ""}>{eachData}</div>;
+                })
+              }
 
-            {this.temp2.map((eachData) => {
-              return <Card sendingData={eachData}></Card>;
-            })}
+            </div>
+            {this.state.type === "All" ? this.temp2.map((eachData) => {
+              return <Card sendingData={eachData}></Card> ;
+            }) : this.temp2.filter((eachData) => eachData.type === this.state.type).map((eachData) => {return <Card sendingData={eachData}></Card>}
+            )}
           </div>
 
           <div className="projects" id="proj">

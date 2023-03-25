@@ -26,7 +26,25 @@ export const PostData = {
         <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
           Shopify
         </span>
-      )
+      ),
+      type: "Internships"
+    },
+    {
+      title: "Teaching Assistant (CSCD01)",
+      github: "",
+      description: [
+        "Teaching Assistant for CSCD01 (Engineering Large Software Systems)",
+        "Assist students with solving issues in the open source libraries: NumPy, Pandas, SciKit-Learn",
+        "Grade students understanding on software design and implementation for efficiency and clean code"
+      ],
+      tools: [],
+
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          University of Toronto
+        </span>
+      ),
+      type: "Part Time"
     },
     {
       title: "Software Developer",
@@ -39,7 +57,8 @@ export const PostData = {
         <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
           Cineplex Digital Medias
         </span>
-      )
+      ),
+      type: "Internships"
     },
     {
       title: "Open-Source Developer",
@@ -52,7 +71,8 @@ export const PostData = {
         <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
           MLH Fellowship
         </span>
-      )
+      ),
+      type: "Internships"
     },
 
     {
@@ -66,7 +86,8 @@ export const PostData = {
         <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
           University of Toronto
         </span>
-      )
+      ),
+      type: "Part Time"
     },
 
     {
@@ -85,6 +106,7 @@ export const PostData = {
           FundSERV Inc.
         </span>
       ),
+      type: "Internships"
 
     },
 
@@ -100,16 +122,17 @@ export const PostData = {
         <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
           MEIO (Medical Education Initiative Organization)
         </span>
-      )
+      ),
+      type: "Part Time"
     },
 
 
     {
-      title: "Teaching Assistant",
+      title: "Teaching Assistant (CSCA20)",
       github: "",
       description: [
         "Teaching Assistant for CSCA20 (Introduction to Programming)",
-        "Hold weekly tutorials and assist in marking process of exmainations",
+        "Hold weekly tutorials and assist in marking process of examinations",
         "Answer student concerns about course material"
       ],
       tools: [],
@@ -119,6 +142,7 @@ export const PostData = {
           University of Toronto
         </span>
       ),
+      type: "Part Time"
     },
     
     {
@@ -157,6 +181,7 @@ export const PostData = {
           (The Association of Mathematical And Computer Science Students)
         </span>
       ),
+      type: "Part Time"
     },
 
     {
@@ -185,6 +210,7 @@ export const PostData = {
           YMCA
         </span>
       ),
+      type: "Outdated"
     },
     {
       title: "YIPI",
@@ -219,6 +245,7 @@ export const PostData = {
           )
         </span>
       ),
+      type: "Outdated"
     },
   ],
   projects: [

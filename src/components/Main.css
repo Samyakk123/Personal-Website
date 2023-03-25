@@ -88,12 +88,47 @@
   color: var(--white);
 }
 
+#subtitles2 {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: flex-start;
+
+  height: auto;
+  padding-top: 20px;
+  margin: 20px;
+  
+  top: 50px;
+}
+
 .title {
   display: flex;
   justify-content: center;
   padding-top: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+/* CHANGE THIS */
+.selected{
+  /* padding-top: 5px; */
+  /* color: #2dbed2; */
+  color: rgba(255, 255, 255, 0.842);
+
+  font-size: 1.5rem;
+  /* background-color: rgb(2, 32, 71); */
+  background-color: rgb(70, 70, 137);
+
+  /* border-style: solid;
+  border-color: rgba(0, 0, 0, 0.788); */
+
+  /*  box-shadow: -1px 1px 5px 0.00000001px rgb(9, 32, 70); */
+
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* border-radius: 0.25rem; */
 }
 
 #heading2 {
