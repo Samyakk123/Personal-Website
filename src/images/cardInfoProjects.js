@@ -14,6 +14,47 @@ import { GiPoliceOfficerHead } from "react-icons/gi";
 
 export const PostData = {
   experiences: [
+
+    {
+      title: "Software Developer",
+      github: "",
+      description: ["Automated charge creations for various merchant-facing fees streamlining the billing process and saving the billing ops team 25% of their time in Ruby on Rails", 
+      "Revamped merchant facing UX by utilizing graphQL and React, creating a new UI and improving overall user experience", 
+      "Designed and implemented a new validation process in preparation for BFCM (Black Friday, Cyber Monday), resulting in smoother transactions for merchants and their customers"],
+      tools: [],
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          Shopify
+        </span>
+      )
+    },
+    {
+      title: "Software Developer",
+      github: "",
+      description: ["Collaborated on the development of the LCBO Kiosk machine, implementing new features, updating content, and fixing bugs to enhance the user experience using React and Electron", 
+      "Integrated a map feature into the Kiosk, allowing users to easily locate individual store locations of products and improving overall usability in React", 
+      "Managed testing, quality assurance, and project scoping across different countries and languages, ensuring seamless communication and successful project completion"],
+      tools: [],
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          Cineplex Digital Medias
+        </span>
+      )
+    },
+    {
+      title: "Open-Source Developer",
+      github: "",
+      description: ["Developed disjointed time buckets in Python for clustering information together, useful for retro-actioning and viewing representative media ", 
+      "Performed benchmark testing in PyTest and using AWS Lambda to maximize efficiency with minimal memory cost", 
+      "•	Created a custodian lambda for automating the HMA process over timed intervals, improving overall system automation"],
+      tools: [],
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          MLH Fellowship
+        </span>
+      )
+    },
+
     {
       title: "Full Stack Developer",
       github: "",
@@ -181,6 +222,54 @@ export const PostData = {
     },
   ],
   projects: [
+    {
+      title: "DrawHub",
+      github: "https://github.com/navn-r/drawhub",
+      description: [
+        "Created platform for multiple contributors to draw on canvas with real-time updates using NestJS and NX monorepo",
+        "Notified contributors via email using Redis, Nest JS queues and SendGrid",
+        "Implemented stitching functionality with identical behavior to GitHub’s fork feature",
+      ],
+      tools: [
+        "Nx",
+        "React + TypeScript",
+        "NestJS",
+        "Apollo GraphQL",
+        "Socket.io",
+        "Bull",
+        "Nodemailer",
+        "MongoDb",
+        "Redis",
+        "Auth0",
+        "AWS S3",
+        "Google Drive API",
+        "Twilio SendGrid",
+        "Docker",
+        "Kubernetes",
+        "DigitalOcean",
+        "Nginx",
+      ],
+      external: (
+        <a
+          href="https://uimpactify.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsBoxArrowUpRight id="git" size="50px" alt="exeFile" />
+        </a>
+      ),
+      img: (
+        <img
+          src={UImpactify}
+          width="50px"
+          height="50px"
+          color="green"
+          alt="UImpactify"
+        />
+      ),
+    },
+
+
     {
       title: "UImpactify",
       github: "https://github.com/Samyakk123/U-Impactify",
