@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import "./Main.css";
 import UofTlogo from "../images/Utoronto_coa.svg.png";
 
