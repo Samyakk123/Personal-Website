@@ -29,8 +29,7 @@
 
 .text4 {
   /* font-family: sans-serif; */
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   /* color: #2dbed2; */
   color: #6c91cf;
 }
@@ -47,7 +46,16 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 30%;
+  width: 50%;
+  padding-bottom: 60px;
+  font-size: 1.5rem;
+
+  /* font-family: sans-serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* color: #2dbed2; */
+  color: rgb(231, 181, 73);
+
 }
 
 .descriptionAndSkills {

@@ -168,10 +168,12 @@ class Main extends Component {
               }
 
             </div>
-            {this.state.type === "All" ? this.temp2.map((eachData) => {
+            {this.state.type==="Full Time" ? <Card sendingData={{title: "Still in School", github:"", description: ["Come back August 2023"], tools: [], subtitle: "", type: ""}}>Full Time</Card> :
+            this.state.type === "All" ? this.temp2.map((eachData) => {
               return <Card sendingData={eachData}></Card> ;
             }) : this.temp2.filter((eachData) => eachData.type === this.state.type).map((eachData) => {return <Card sendingData={eachData}></Card>}
             )}
+            
           </div>
 
           <div className="projects" id="proj">

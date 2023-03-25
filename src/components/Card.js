@@ -23,6 +23,7 @@ class Card extends Component {
             </h4>
 
             <div className="imagesHolder">
+              {this.props.sendingData.type}
               {this.props.sendingData.github ? (
                 <a
                   href={this.props.sendingData.github}
