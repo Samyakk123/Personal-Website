@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Main.css";
 import UofTlogo from "../images/Utoronto_coa.svg.png";
 
-import resume from "../images/SamyakMehta_Resume.pdf";
+import resume from "../images/Samyak_Mehta_Resume.pdf";
 import Card from "../components/Card";
 
 import { FaGithub } from "react-icons/fa";
@@ -41,12 +41,12 @@ class Main extends Component {
               <div className="flipper">
                 <div className="normalText">
                   <para>
-                    I am a third year Computer Science Student at the
+                    I am a Computer Science graduate from the 
                     <span style={{ color: "#1049ef", fontWeight: "600" }}>
                       {" "}
                       University of Toronto,
                     </span>{" "}
-                    pursuing a specialist in Software Engineering with a major
+                    with a specialist in Software Engineering with a major
                     in Statistics!
                   </para>
 
@@ -168,7 +168,7 @@ class Main extends Component {
               }
 
             </div>
-            {this.state.type==="Full Time" ? <Card sendingData={{title: "Still in School", github:"", description: ["Come back August 2023"], tools: [], subtitle: "", type: ""}}>Full Time</Card> :
+            {
             this.state.type === "All" ? this.temp2.map((eachData) => {
               return <Card sendingData={eachData}></Card> ;
             }) : this.temp2.filter((eachData) => eachData.type === this.state.type).map((eachData) => {return <Card sendingData={eachData}></Card>}

@@ -18,6 +18,18 @@ export const PostData = {
     {
       title: "Software Developer",
       github: "",
+      description: ["Developed and optimized SQL-based APIs, streamlining user validation, status checks, and event message processing", "Implemented efficient AWS Lambda functions, contributing to critical production updates and facilitating multi-environment testing", "Strengthened security measures with JWT token authentication and improved backend performance by optimizing user API calls", "Collaborated in the successful deployment of critical updates to production, demonstrating expertise in managing end-to-end backend development processes and ensuring the reliability of live systems"],
+      tools: [],
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          Altus Group
+        </span>
+      ),
+      type: "Full Time"
+    },
+    {
+      title: "Software Developer",
+      github: "",
       description: ["Automated charge creations for various merchant-facing fees streamlining the billing process and saving the billing ops team 25% of their time in Ruby on Rails", 
       "Revamped merchant facing UX by utilizing graphQL and React, creating a new UI and improving overall user experience", 
       "Designed and implemented a new validation process in preparation for BFCM (Black Friday, Cyber Monday), resulting in smoother transactions for merchants and their customers"],
