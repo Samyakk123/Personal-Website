@@ -14,7 +14,31 @@ import { GiPoliceOfficerHead } from "react-icons/gi";
 
 export const PostData = {
   experiences: [
+    {
+      title: "Software Developer",
+      github: "",
+      description: ["Developed and integrated a full-stack solution enabling admins to modify user permissions, including a backend API, approval handler, and frontend React-query mutation for seamless role management", "Optimized user authentication, reducing signup time by integrating three efficient authentication methods", "Reduce page load times by implementing bulk pending approvals to avoid n+1 query problems for various types of approvals"],
+      tools: [],
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          Stealth Startup
+        </span>
+      ),
+      type: "Full Time"
+    },
 
+    {
+      title: "Software Developer",
+      github: "",
+      description: ["Developed an improved paginated table for efficiency of large menu groups, achieving a 300% improvement in load times, streamlining user validation, status checks, and event message processing", "Integrated inline price editing with tags filtering, resulting in a 50% reduction in operator price update time in Vue.js", "Utilized GraphQL to design and implement a bulk API call system, which reduced the number of requests per page load by 40%, leading to faster load times and improved performance"],
+      tools: [],
+      subtitle: (
+        <span id="specialFontCase" style={{ fontFamily: "sans-serif" }}>
+          Compass Digital
+        </span>
+      ),
+      type: "Full Time"
+    },
     {
       title: "Software Developer",
       github: "",
