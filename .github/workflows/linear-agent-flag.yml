@@ -1,0 +1,76 @@
+name: linear-agent-flag
+
+# Polls Linear for tickets labeled `agent-ready` and rewrites a tiny public
+# JSON snapshot ("the flag") that a credential-less watcher can poll.
+# The flag contains ONLY ticket keys, queue states, and assignee names —
+# no titles, descriptions, code, or secrets.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *" # every 5 minutes; hook polls the flag every minute
+  workflow_dispatch: {} # allow manual runs for testing
+
+concurrency:
+  group: linear-agent-flag
+  cancel-in-progress: true # a newer poll supersedes an older one; only latest state matters
+
+permissions:
+  contents: write # so GITHUB_TOKEN can push the flag file
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Poll Linear and rewrite flag file
+        env:
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }} # repo secret, added manually
+          TRIGGER_LABEL: agent-ready # Linear label that arms a ticket for the agent (both teams)
+          FLAG_PATH: agent/flag-fab870bbe960.json # obscure path; read via raw.githubusercontent.com
+        run: |
+          set -euo pipefail
+
+          # All tickets with the trigger label across the workspace; the agent
+          # routes FRA-* to franco and TWO-* to TwoTales by key prefix.
+          QUERY='query($label: String!) { issues(filter: { labels: { some: { name: { eq: $label } } } }, first: 100) { nodes { identifier team { key } state { type } assignee { name } } } }'
+
+          RESP=$(curl -sS --fail --max-time 30 -X POST https://api.linear.app/graphql \
+            -H 'Content-Type: application/json' \
+            -H "Authorization: $LINEAR_API_KEY" \
+            -d "$(jq -n --arg q "$QUERY" --arg label "$TRIGGER_LABEL" \
+              '{query: $q, variables: {label: $label}}')")
+
+          NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+          mkdir -p "$(dirname "$FLAG_PATH")" # created on first run; nothing to make by hand
+
+          # Snapshot: labeled tickets that aren't done/canceled, tagged by team.
+          # Linear is the source of truth; this file is just a doorbell.
+          echo "$RESP" | jq --arg now "$NOW" '
+            { updated_at: $now,
+              tickets: [
+                .data.issues.nodes[]
+                | select(.team.key == "FRA" or .team.key == "TWO")
+                | select(.state.type != "completed" and .state.type != "canceled")
+                | { key: .identifier,
+                    team: .team.key,
+                    state: (if .state.type == "started" then "running" else "queued" end),
+                    owner: (.assignee.name // null) }
+              ] }' > "$FLAG_PATH"
+
+          echo "Flag written to $FLAG_PATH:"
+          cat "$FLAG_PATH"
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent/flag-fab870bbe960.json
+          if git diff --cached --quiet; then
+            echo "No change, skipping commit."
+          else
+            git commit -m "Update agent flag [skip ci]"
+            git push
+          fi
