@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-10-11T08:20:09Z",
+  "updated_at": "2026-10-11T09:19:22Z",
   "tickets": [
+    {
+      "key": "FRA-56",
+      "team": "FRA",
+      "state": "running",
+      "owner": "Samyak Mehta"
+    },
     {
       "key": "FRA-55",
       "team": "FRA",
@@ -10,17 +16,11 @@
     {
       "key": "FRA-50",
       "team": "FRA",
-      "state": "queued",
-      "owner": "Samyak Mehta"
-    },
-    {
-      "key": "FRA-48",
-      "team": "FRA",
       "state": "running",
       "owner": "Samyak Mehta"
     },
     {
-      "key": "FRA-47",
+      "key": "FRA-48",
       "team": "FRA",
       "state": "running",
       "owner": "Samyak Mehta"
