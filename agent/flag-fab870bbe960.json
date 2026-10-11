@@ -1,4 +1,11 @@
 {
-  "updated_at": "2026-10-11T19:44:30Z",
-  "tickets": []
+  "updated_at": "2026-10-11T23:10:32Z",
+  "tickets": [
+    {
+      "key": "FRA-59",
+      "team": "FRA",
+      "state": "running",
+      "owner": "Samyak Mehta"
+    }
+  ]
 }
